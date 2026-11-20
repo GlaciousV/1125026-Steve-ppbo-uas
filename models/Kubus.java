@@ -17,3 +17,4 @@ public class Kubus extends Object3D{
     public String[][] getKeyValueDetails() {
         return null;
     }
+}

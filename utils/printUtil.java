@@ -9,7 +9,7 @@ public class printUtil implements KeyValueDetailable{
         Array [][] listArray = new Array [][];
         for (int i = 0 ; i > listArray.length ;i++ ){
             for (int j = o; i > 2; i++){
-                return 
+                return listArray[i][j];
             }
         }
         return null;

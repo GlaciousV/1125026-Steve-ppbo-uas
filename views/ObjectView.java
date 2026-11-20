@@ -32,7 +32,7 @@ public class ObjectView {
         System.out.println("Menu:");
         System.out.println("1. Tampilkan Semua");
         System.out.println("2. Tambah Persegi");
-        System.out.println("3. Tampilkan semua device terurut berdasarkan OS");
+        System.out.println("3. Tampilkan semua device terurut berdasarkan object");
         System.out.println("0. Keluar");
     }
 
@@ -55,7 +55,7 @@ public class ObjectView {
     }
 
     private void handleAddDevice() throws InvalidOSException {
-        System.out.println("Pilih OS: 1. Windows, 2. Ubuntu, 3. Fedora");
+        System.out.println("Pilih object: 1. Windows, 2. Ubuntu, 3. Fedora");
         int osChoice = CLIUtils.getInt();
 
         if (osChoice < 1 || osChoice > 3) {
@@ -64,16 +64,16 @@ public class ObjectView {
         System.out.println("masukan versi : ");
         String version = CLIUtils.getString();
 
-        OperatingSystem os = createOperatingSystem(osChoice, version);
-        controller.addDevice(ownerName, os);
+        OperatingSystem object = createOperatingSystem(osChoice, version);
+        controller.addDevice(ownerName, object);
     }
 
-    private OperatingSystem createOperatingSystem(int osChoice, String version) throws InvalidOSException {
+    private OperatingSystem createObjectForm(<T extends GObjectForm) throws InvalidOSException {
         switch (osChoice) {
             case 1:
-                return new Windows(version);
+                return printUtil.printGObjectDetail(allObjects);
             case 2:
-                return new Ubuntu(version);
+                return  showInsertForm();
             case 3:
                 return new Fedora(version);
 
