@@ -7,10 +7,10 @@ import exceptions.*;
 import models.*;
 import utils.*;
 
-public class DeviceView {
+public class ObjectView {
     private final IDeviceController controller;
 
-    public DeviceView(IDeviceController controller) {
+    public ObjectView(IDeviceController controller) {
         this.controller = controller;
     }
 
@@ -30,8 +30,8 @@ public class DeviceView {
 
     private void printMainMenu() {
         System.out.println("Menu:");
-        System.out.println("1. Tambah device");
-        System.out.println("2. Tampilkan semua device");
+        System.out.println("1. Tampilkan Semua");
+        System.out.println("2. Tambah Persegi");
         System.out.println("3. Tampilkan semua device terurut berdasarkan OS");
         System.out.println("0. Keluar");
     }
