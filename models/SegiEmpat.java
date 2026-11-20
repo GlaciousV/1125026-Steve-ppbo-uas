@@ -12,12 +12,11 @@ public class SegiEmpat extends Object2D {
     }
     @Override
     public double hitungKeliling() {
-        return this.getLebar()* 2 + (this.getPanjang());
+        return this.lebar * 2 + (this.panjang* 2);
     }
     @Override
     public double hitungLuas() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.panjang * this.lebar;
     }
     @Override
     public String[][] getKeyValueDetails() {

@@ -5,7 +5,7 @@ public abstract class Object3D extends GObject {
 
     }
 
-    public abstract doublle hitungVolume() {
+    public abstract double hitungVolume() {
 
     }
 }
