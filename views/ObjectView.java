@@ -55,8 +55,6 @@ public class ObjectView {
     }
 
     private void handleAddDevice() throws InvalidOSException {
-        System.out.println("Masukan Nama Pengguna : ");
-        String ownerName = CLIUtils.getString();
         System.out.println("Pilih OS: 1. Windows, 2. Ubuntu, 3. Fedora");
         int osChoice = CLIUtils.getInt();
 
